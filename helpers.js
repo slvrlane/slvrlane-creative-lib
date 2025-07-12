@@ -57,10 +57,8 @@ function myColors(colorName = "", alpha = 1) {
  * Fügt einen "Grain"-Effekt zum Canvas hinzu, basierend auf Dichte und Korngrösse.
  * Diese Variante nutzt ImageData, das heisst, sie geht Pixel für Pixel durch und verschiebt die Farben
  * @param {CanvasRenderingContext2D} context - Der 2D-Rendering-Kontext.
- * @param {number} width - Die Breite des Canvas.
- * @param {number} height - Die Höhe des Canvas.
- * @param {number} [density=0.25] - Der prozentuale Anteil der Pixel, die zu Körnern werden (0 bis 1).
- * @param {number} [grainSize=1] - Die Grösse der einzelnen Körner in Pixel (z.B. 1 für 1x1, 2 für 2x2).
+ * @param {number} size - die Grösse des Sketches als Array
+ * @param {String} style - die Art des Korns, colorfull, parallel, red, invert
  */
 function addGrain(context, size, style = "parallelGrain") {
   // Graupunkte hinzufügen
